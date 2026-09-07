@@ -1,5 +1,6 @@
 # Maven build artifacts
 /target/
+target/
 *.jar
 *.war
 *.ear
