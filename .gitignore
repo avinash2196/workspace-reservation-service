@@ -1,0 +1,51 @@
+# Maven build artifacts
+/target/
+*.jar
+*.war
+*.ear
+*.zip
+
+# Compiled class files
+*.class
+*.classpath
+
+# Log files
+*.log
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE - Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IDE - Eclipse
+.project
+.settings/
+.classpath
+
+# IDE - NetBeans
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Project specific
+.git/
+*.swp
+*.swo
+*~
+
+# Note: application.properties in src/main/resources/ should be committed
+# Only ignore compiled properties in target/
+

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.workspace.reservation.controller.ReservationControllerHttpAPITest
--------------------------------------------------------------------------------
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.89 s -- in com.example.workspace.reservation.controller.ReservationControllerHttpAPITest
