@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.workspace.reservation.controller.ReservationControllerHttpAPITest" time="14.892" tests="22" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service\target\test-classes;C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service\target\classes;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;C:\Users\avina\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\avina\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\avina\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\avina\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\avina\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\avina\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\avina\.m2\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;C:\Users\avina\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;C:\Users\avina\.m2\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;C:\Users\avina\.m2\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;C:\Users\avina\.m2\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;C:\Users\avina\.m2\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;C:\Users\avina\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\avina\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\avina\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\avina\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\avina\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\avina\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\avina\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\avina\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\avina\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\avina\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\avina\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\avina\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\avina\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\avina\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\avina\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\avina\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\avina\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\avina\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\avina\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\avina\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\avina\.m2\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;C:\Users\avina\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\avina\AppData\Local\Temp\surefire4146777838403498672\surefirebooter-20260907013302588_3.jar C:\Users\avina\AppData\Local\Temp\surefire4146777838403498672 2026-09-07T01-33-02_429-jvmRun1 surefire-20260907013302588_1tmp surefire_0-20260907013302588_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service\target\test-classes;C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service\target\classes;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;C:\Users\avina\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\avina\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\avina\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\avina\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\avina\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\avina\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\avina\.m2\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;C:\Users\avina\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\avina\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;C:\Users\avina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;C:\Users\avina\.m2\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;C:\Users\avina\.m2\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;C:\Users\avina\.m2\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;C:\Users\avina\.m2\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;C:\Users\avina\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;C:\Users\avina\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\avina\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\avina\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\avina\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\avina\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\avina\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\avina\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\avina\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\avina\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\avina\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\avina\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\avina\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\avina\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\avina\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\avina\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\avina\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\avina\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\avina\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\avina\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\avina\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\avina\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\avina\.m2\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;C:\Users\avina\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\avina"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\avina\AppData\Local\Temp\surefire4146777838403498672\surefirebooter-20260907013302588_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8"/>
+    <property name="user.name" value="avina"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.18+8"/>
+    <property name="localRepository" value="C:\Users\avina\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\avina\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\avina\AppData\Local\Temp\tomcat.0.4153364803878311615"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="30884"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="catalina.base" value="C:\Users\avina\AppData\Local\Temp\tomcat.0.16199931883984278162"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\GitHub CLI\;C:\Users\avina\Downloads\avinash-repo\finnie-chat\venv\Scripts;c:\Users\avina\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\avina\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\avina\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;c:\Users\avina\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\avina\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\avina\AppData\Local\Microsoft\WindowsApps;C:\Users\avina\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\avina\.vscode\extensions\ms-python.debugpy-2025.16.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Git\bin;C:\Users\avina\AppData\Local\Python\bin;c:\Users\avina\.vscode\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\avina\AppData\Local\Programs\Python\Python311;C:\Users\avina\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\avina\AppData\Local\GitHubDesktop\bin;C:\Users\avina\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\avina\tools\maven\apache-maven-3.9.16\bin;C:\Users\avina\AppData\Local\github-copilot\jetbrains-terminal\copilot-cli-shim\v1;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.18+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateReservationResponseHasCorrectStructure" classname="ReservationController - HTTP API Endpoints" time="1.388">
+    <system-out><![CDATA[01:33:03.320 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.workspace.reservation.controller.ReservationControllerHttpAPITest]: ReservationControllerHttpAPITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:33:03.444 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.workspace.reservation.WorkspaceReservationApplication for test class com.example.workspace.reservation.controller.ReservationControllerHttpAPITest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:03.772-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:03.773-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:04.921-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:04.935-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:04.936-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:05.006-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:05.008-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1226 ms
+2026-09-07T01:33:05.581-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:05.582-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:05.584-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:05.698-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54211 (http) with context path '/'
+2026-09-07T01:33:05.713-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 2.152 seconds (process running for 2.987)
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentOverlappingCreateRequestsRaceCondition" classname="ReservationController - HTTP API Endpoints" time="0.247">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:07.145-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:07.145-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:07.357-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:07.359-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:07.359-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:07.395-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:07.395-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 248 ms
+2026-09-07T01:33:07.517-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:07.517-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:07.518-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:07.531-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54213 (http) with context path '/'
+2026-09-07T01:33:07.535-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.415 seconds (process running for 4.808)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationWithOverlapOnSameWorkspaceReturns409" classname="ReservationController - HTTP API Endpoints" time="0.331">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:07.830-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:07.831-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:08.066-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:08.068-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:08.069-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:08.095-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:08.096-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 261 ms
+2026-09-07T01:33:08.184-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:08.184-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:08.185-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:08.202-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54215 (http) with context path '/'
+2026-09-07T01:33:08.207-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.419 seconds (process running for 5.481)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAfterDeleteShowsCancelledStatus" classname="ReservationController - HTTP API Endpoints" time="0.299">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:08.568-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:08.569-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:08.886-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:08.887-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:08.888-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:08.921-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:08.921-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2026-09-07T01:33:09.037-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:09.037-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:09.038-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:09.062-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54217 (http) with context path '/'
+2026-09-07T01:33:09.068-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.52 seconds (process running for 6.341)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetReservationResponseHasAllFields" classname="ReservationController - HTTP API Endpoints" time="0.204">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:09.403-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:09.403-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:09.645-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:09.646-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:09.647-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:09.667-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:09.667-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 261 ms
+2026-09-07T01:33:09.735-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:09.735-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:09.736-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:09.752-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54219 (http) with context path '/'
+2026-09-07T01:33:09.760-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.388 seconds (process running for 7.033)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationGeneratesUniqueIds" classname="ReservationController - HTTP API Endpoints" time="0.24">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:09.986-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:09.986-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:10.157-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:10.159-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:10.159-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:10.180-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:10.181-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2026-09-07T01:33:10.262-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:10.263-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:10.264-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:10.280-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54221 (http) with context path '/'
+2026-09-07T01:33:10.283-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.313 seconds (process running for 7.556)
+]]></system-out>
+  </testcase>
+  <testcase name="testPostResponseHasContentType" classname="ReservationController - HTTP API Endpoints" time="0.184">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:10.557-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:10.558-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:10.739-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:10.740-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:10.741-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:10.769-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:10.770-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 210 ms
+2026-09-07T01:33:10.832-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:10.833-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:10.833-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:10.843-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54223 (http) with context path '/'
+2026-09-07T01:33:10.847-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.319 seconds (process running for 8.12)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationWithAdjacentTimesReturns201" classname="ReservationController - HTTP API Endpoints" time="0.32">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:11.058-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:11.058-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:11.278-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:11.282-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:11.283-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:11.307-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:11.308-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
+2026-09-07T01:33:11.410-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:11.410-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:11.411-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:11.428-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54225 (http) with context path '/'
+2026-09-07T01:33:11.431-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.395 seconds (process running for 8.704)
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteCancelledReservationReturns204" classname="ReservationController - HTTP API Endpoints" time="0.183">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:11.782-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:11.782-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:11.968-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:11.969-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:11.969-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:11.986-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:11.987-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2026-09-07T01:33:12.047-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:12.047-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:12.047-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:12.060-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54227 (http) with context path '/'
+2026-09-07T01:33:12.063-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.306 seconds (process running for 9.336)
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteActiveReservationReturns204" classname="ReservationController - HTTP API Endpoints" time="0.204">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:12.269-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:12.270-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:12.446-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:12.448-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:12.448-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:12.470-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:12.471-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2026-09-07T01:33:12.531-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:12.531-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:12.532-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:12.546-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55437 (http) with context path '/'
+2026-09-07T01:33:12.549-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.297 seconds (process running for 9.822)
+]]></system-out>
+  </testcase>
+  <testcase name="testErrorResponseStructure" classname="ReservationController - HTTP API Endpoints" time="0.184">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:12.772-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:12.772-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:12.932-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:12.933-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:12.933-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:12.953-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:12.954-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 181 ms
+2026-09-07T01:33:13.005-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:13.006-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:13.007-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:13.018-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55439 (http) with context path '/'
+2026-09-07T01:33:13.021-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.265 seconds (process running for 10.293)
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentAdjacentCreateRequestsBothSucceed" classname="ReservationController - HTTP API Endpoints" time="0.255">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:13.221-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:13.222-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:13.349-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:13.350-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:13.351-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:13.369-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:13.370-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2026-09-07T01:33:13.430-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:13.430-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:13.431-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:13.439-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55441 (http) with context path '/'
+2026-09-07T01:33:13.445-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.237 seconds (process running for 10.718)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationDifferentWorkspacesDoNotConflict" classname="ReservationController - HTTP API Endpoints" time="0.267">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:13.717-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:13.717-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:13.841-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:13.842-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:13.842-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:13.867-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:13.867-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2026-09-07T01:33:13.925-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:13.925-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:13.926-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:13.938-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55443 (http) with context path '/'
+2026-09-07T01:33:13.941-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.237 seconds (process running for 11.214)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetReservationReturns200" classname="ReservationController - HTTP API Endpoints" time="0.217">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:14.238-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:14.239-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:14.390-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:14.391-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:14.392-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:14.412-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:14.413-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 171 ms
+2026-09-07T01:33:14.473-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:14.473-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:14.473-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:14.488-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55445 (http) with context path '/'
+2026-09-07T01:33:14.491-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.277 seconds (process running for 11.764)
+]]></system-out>
+  </testcase>
+  <testcase name="testErrorResponsesHaveJsonContentType" classname="ReservationController - HTTP API Endpoints" time="0.245">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:14.729-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:14.729-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:14.886-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:14.888-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:14.888-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:14.911-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:14.911-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2026-09-07T01:33:14.962-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:14.962-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:14.963-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:14.976-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55447 (http) with context path '/'
+2026-09-07T01:33:14.980-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.267 seconds (process running for 12.253)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationWithValidDataReturns201" classname="ReservationController - HTTP API Endpoints" time="0.178">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:15.264-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:15.264-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:15.445-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:15.448-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:15.448-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:15.475-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:15.475-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2026-09-07T01:33:15.581-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:15.582-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:15.582-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:15.603-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55449 (http) with context path '/'
+2026-09-07T01:33:15.607-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.373 seconds (process running for 12.881)
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteReservationResponseIsEmpty" classname="ReservationController - HTTP API Endpoints" time="0.185">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:15.808-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:15.808-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:15.941-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:15.942-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:15.942-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:15.958-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:15.958-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2026-09-07T01:33:16.003-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:16.003-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:16.004-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-07T01:33:16.014-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55451 (http) with context path '/'
+2026-09-07T01:33:16.017-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.225 seconds (process running for 13.29)
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentDifferentWorkspacesCreatesBoth" classname="ReservationController - HTTP API Endpoints" time="0.18">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:16.220-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:16.222-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:16.348-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:16.349-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:16.350-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:16.366-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:16.367-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2026-09-07T01:33:16.418-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:16.419-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:16.419-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:16.428-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55453 (http) with context path '/'
+2026-09-07T01:33:16.430-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.226 seconds (process running for 13.704)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetResponseHasContentType" classname="ReservationController - HTTP API Endpoints" time="0.158">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:16.629-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:16.629-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:16.744-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:16.746-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:16.746-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:16.762-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:16.762-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
+2026-09-07T01:33:16.812-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:16.813-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:16.813-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:16.823-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55455 (http) with context path '/'
+2026-09-07T01:33:16.826-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.21 seconds (process running for 14.098)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCancelledReservationReturns200" classname="ReservationController - HTTP API Endpoints" time="0.182">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:16.999-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:16.999-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:17.090-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:17.091-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:17.092-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:17.109-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:17.109-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2026-09-07T01:33:17.147-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:17.147-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:17.147-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:17.158-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55457 (http) with context path '/'
+2026-09-07T01:33:17.160-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.173 seconds (process running for 14.433)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateReservationDoesNotConflictWithCancelledReservation" classname="ReservationController - HTTP API Endpoints" time="0.175">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:17.355-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:17.355-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:17.467-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:17.468-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:17.469-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:17.484-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:17.484-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 128 ms
+2026-09-07T01:33:17.526-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:17.526-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:17.526-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:17.535-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55459 (http) with context path '/'
+2026-09-07T01:33:17.538-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.194 seconds (process running for 14.811)
+]]></system-out>
+  </testcase>
+  <testcase name="testTimestampFormatPreservation" classname="ReservationController - HTTP API Endpoints" time="0.191">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-09-07T01:33:17.726-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Starting ReservationControllerHttpAPITest using Java 17.0.18 with PID 30884 (started by avina in C:\Users\avina\Downloads\avinash-repo\workspace-reservation-service)
+2026-09-07T01:33:17.726-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T01:33:17.816-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-09-07T01:33:17.818-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T01:33:17.818-05:00  INFO 30884 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-09-07T01:33:17.830-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-07T01:33:17.830-05:00  INFO 30884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 103 ms
+2026-09-07T01:33:17.865-05:00  INFO 30884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2026-09-07T01:33:17.866-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-07T01:33:17.866-05:00  INFO 30884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-09-07T01:33:17.874-05:00  INFO 30884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55461 (http) with context path '/'
+2026-09-07T01:33:17.877-05:00  INFO 30884 --- [           main] e.w.r.c.ReservationControllerHttpAPITest : Started ReservationControllerHttpAPITest in 0.162 seconds (process running for 15.151)
+]]></system-out>
+  </testcase>
+</testsuite>

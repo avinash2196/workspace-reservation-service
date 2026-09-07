@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.workspace.reservation.store.ReservationStoreTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s -- in com.example.workspace.reservation.store.ReservationStoreTest
