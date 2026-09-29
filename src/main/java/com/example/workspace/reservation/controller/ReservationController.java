@@ -2,6 +2,7 @@ package com.example.workspace.reservation.controller;
 
 import com.example.workspace.reservation.dto.CreateReservationRequest;
 import com.example.workspace.reservation.dto.ReservationResponse;
+import com.example.workspace.reservation.event.ReservationEventPublisher;
 import com.example.workspace.reservation.exception.ResourceNotFoundException;
 import com.example.workspace.reservation.service.ReservationValidator;
 import com.example.workspace.reservation.store.ReservationStore;
@@ -23,11 +24,14 @@ public class ReservationController {
 
     private final ReservationValidator validator;
     private final ReservationStore store;
+    private final ReservationEventPublisher eventPublisher;
 
     @Autowired
-    public ReservationController(ReservationValidator validator, ReservationStore store) {
+    public ReservationController(ReservationValidator validator, ReservationStore store,
+                                 ReservationEventPublisher eventPublisher) {
         this.validator = validator;
         this.store = store;
+        this.eventPublisher = eventPublisher;
     }
 
     @PostMapping
@@ -61,6 +65,9 @@ public class ReservationController {
 
         // Store reservation with conflict detection
         Reservation storedReservation = store.createWithConflictCheck(reservation);
+
+        // Best-effort ReservationCreated event; publish failures are absorbed by the publisher
+        eventPublisher.publishReservationCreated(storedReservation);
 
         // Return 201 Created with response body
         return ResponseEntity.status(HttpStatus.CREATED).body(toResponse(storedReservation));

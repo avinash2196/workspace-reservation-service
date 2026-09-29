@@ -46,6 +46,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Kafka client for ReservationCreated publishing (reservation-events RE-F1).
+             Version pinned to a supported Apache Kafka line, overriding the Boot-managed version. -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+
         <!-- Spring Boot Starter Test (includes JUnit 5, Mockito, AssertJ) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
